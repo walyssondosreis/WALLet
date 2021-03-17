@@ -8,9 +8,23 @@
 
 class PivoAcao:
     """  Estabelecimento ou Pessoa de Origem ou Destino do recurso """
-    pass
+    nome_razao=""
+    cpf_cnpj=""
+    info=""
+    def __init__(self,nr):
+        self.nome_razao=nr.upper()
+    def BuscaPv(self):
+        return [self.nome_razao,self.cpf_cnpj,self.info.upper()]
 
-class
+###################################################
+
+p1=PivoAcao("Medeiros e moura")
+p1.cpf_cnpj=35698
+p1.info="Supermercado"
+print(p1)
+
+
+
 
 
 
