@@ -6,7 +6,7 @@
 
 # coding: utf-8
 
-from usuario import Usuario
+from ativo.usuario import Usuario
 
 user1=Usuario("Walysson dos Reis")
 user1.data_nasc="13/07/1994"
