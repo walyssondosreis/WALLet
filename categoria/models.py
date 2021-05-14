@@ -7,6 +7,7 @@
 # coding: utf-8
 
 from django.db import models
+from django.db.models.query_utils import select_related_descend
 
 class Categoria(models.Model):
     nome=models.CharField(max_length=255)
