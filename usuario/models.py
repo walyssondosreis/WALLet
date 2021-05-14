@@ -8,13 +8,14 @@
 from django.db import models
 
 class Usuario(models.Model):
-    #id="" # Criado automaticamente pelo django.
-    slug=models.SlugField(max_length=255, unique=True)
+    #id -- Criado automaticamente pelo django.
     nome=models.CharField(max_length=255)
     data_nasc=models.DateField()
+    slug=models.SlugField(max_length=255, unique=True)
     #carteira=""
 
+    def cadUsuario(self):
+        pass
 
     def login(self):
-        print("Você esta logado amigo!")
-        #pass
+        pass

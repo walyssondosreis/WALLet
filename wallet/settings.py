@@ -38,6 +38,21 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'usuario.apps.UsuarioConfig',
+    'agente.apps.AgenteConfig',
+    'alvo.apps.AlvoConfig',
+    'banco.apps.BancoConfig',
+    'carteira.apps.CarteiraConfig',
+    'categoria.apps.CategoriaConfig',
+    'divida.apps.DividaConfig',
+    'ganho.apps.GanhoConfig',
+    'gasto.apps.GastoConfig',
+    'operacao.apps.OperacaoConfig',
+    'poupanca.apps.PoupancaConfig',
+    'produto.apps.ProdutoConfig',
+    'saldo.apps.SaldoConfig',
+    'servico.apps.ServicoConfig',
+    'transacao.apps.TransacaoConfig',
+    'valor.apps.ValorConfig',
 ]
 
 MIDDLEWARE = [
