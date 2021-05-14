@@ -8,10 +8,11 @@
 # coding: utf-8
 
 from django.db import models
+from categoria.models import Categoria
 
 class Alvo(models.Model):
     nome=models.CharField(max_length=255)
-    #categoria=
+    categoria=models.ManyToManyField(Categoria)
 
     def cadAlvo(self):
         pass

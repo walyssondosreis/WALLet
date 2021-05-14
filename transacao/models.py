@@ -7,11 +7,14 @@
 # coding: utf-8
 
 from django.db import models
+from django.db.models.deletion import CASCADE
+from operacao.models import Operacao
+from agente.models import Agente
 
 class Transacao(models.Model):
     tipo=models.CharField(max_length=255)
-    #operacao=""
-    #agente=""
+    operacao=models.ForeignKey(Operacao,on_delete=CASCADE,default="")
+    agente=models.OneToOneField(Agente,on_delete=CASCADE,primary_key=True, default="")
     comprovante=models.CharField(max_length=255)
     
     def realizarTransacao(self):

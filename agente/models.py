@@ -7,12 +7,12 @@
 # coding: utf-8
 
 from django.db import models
+from categoria.models import Categoria
 
 class Agente(models.Model):
-    #id -- Criado automaticamente pelo django.
     nome=models.CharField(max_length=255)
     cpf_cnpj=models.CharField(max_length=255)
-    #categoria=""
+    categoria=models.ManyToManyField(Categoria)
     telefone=models.CharField(max_length=255)
     endereco=models.CharField(max_length=255)
     descricao=models.TextField()

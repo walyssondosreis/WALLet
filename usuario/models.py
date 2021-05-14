@@ -6,13 +6,13 @@
 
 # coding: utf-8
 from django.db import models
+from carteira.models import Carteira
 
 class Usuario(models.Model):
-    #id -- Criado automaticamente pelo django.
     nome=models.CharField(max_length=255)
     data_nasc=models.DateField()
     slug=models.SlugField(max_length=255, unique=True)
-    #carteira=""
+    carteira=models.ManyToManyField(Carteira)
 
     def cadUsuario(self):
         pass
